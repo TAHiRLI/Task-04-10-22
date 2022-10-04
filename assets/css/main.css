@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+}
+
+.solar{
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    background-image: url(images/bg.jpeg);
+    background-size: 100%;
+    
+}
+.orbit{
+    border: .5px dashed white;
+}
+.solar .planet{
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.solar *{
+    border-radius: 50%;
+}
+
+ .planet1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    animation: rotate 10s linear  infinite;
+}
+.planet2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: rotate 5s linear  infinite;
+}
+.planet3{
+    position: absolute;
+   top: 110px;
+   left: 110px;
+    animation: rotate 7s linear  infinite;
+}
+.planet4{
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    animation: rotate 2s linear  infinite;
+}
+.planet5{
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    animation: rotate 5s linear  infinite;
+}
+.planet6{
+    position: absolute;
+    top: 290px;
+    left: 290px;
+    animation: rotate 1s linear  infinite;
+} 
+
+.sun{
+    top: 330px;
+    left: 330px;
+}
+
+.rotate{
+    animation: rotate 7s infinite linear ;
+}
+
+
+@keyframes rotate {
+    from{
+    
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
